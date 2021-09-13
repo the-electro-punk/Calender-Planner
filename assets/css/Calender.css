@@ -1,0 +1,17 @@
+.hours {
+    display: inline;
+    width: 500px;
+
+}
+.hours-list {
+    display: inline;
+}
+.specific-hour {
+    text-align:left;
+    font-size:24px;
+    font-weight: bold;
+}
+.timeline {
+    background-color: aqua;
+    border: rgb(27, 153, 140) solid 3px;
+}
