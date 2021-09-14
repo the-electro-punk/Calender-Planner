@@ -1,17 +1,44 @@
+.date {
+    text-align: center;
+    font-size: 56px;
+    background-color: lime;
+    width: 1200px;
+    margin: 0 auto 0 auto;
+    padding: 5px;
+}
 .hours {
     display: inline;
     width: 500px;
-
 }
 .hours-list {
     display: inline;
+   
 }
 .specific-hour {
     text-align:left;
-    font-size:24px;
+    font-size:36px;
     font-weight: bold;
+    margin-left: 200px;
+    margin-top: 10px;
 }
 .timeline {
     background-color: aqua;
+    border-radius: 15px;
     border: rgb(27, 153, 140) solid 3px;
+    height: 180px;
+    width: 1200px;
+    display:flex;
+    flex-direction: column;
+    margin: 0 auto 0 auto;
+}
+.BTN {
+    width: 120px;
+    height:50px;
+    margin-top: 20px;
+    margin-left: 10px;
+    font-size: 18px;
+    background-color: gray;
+}
+.BTN:hover {
+background-color: lightgray;
 }
