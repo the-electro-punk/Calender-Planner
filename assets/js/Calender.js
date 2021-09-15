@@ -7,33 +7,41 @@ var hour = today.getHours()
 console.log("current hours is " + hour)
 let currentDate = document.getElementById("currentDate")
 
-let sevenAM = document.getElementById("7AM") 
-let eightAM = document.getElementById("8AM") 
+const sevenAM = document.getElementById("7AM") 
+const eightAM = document.getElementById("8AM") 
 
 // this fills the current date at the top
 function getCurrentDate() {
     currentDate.textContent = date
-    sevenAM.classList.remove("timelineDone")
-    eightAM.classList.remove("timelineDone")
+    sevenAM.style.background = "aqua"
+    eightAM.style.background = "aqua"
 }
 getCurrentDate()
 
 // this function allows each timeblock to be colored red once that hour has passed
 // example: fomr 7:00-8:00, the 7:00 timeblock is blue but once 8:00 hits, it turns red
 function timeColors() {
-    sevenAM = 7
-    eightAM = 8
-    console.log("sevenAM = 7")
-    if (sevenAM < hour + 1) {
-        sevenAM.classList.remove("timeline")
-        sevenAM.classList.add("timelineDone")
+    console.log("timeColors is active")
+    if (hour >= 8) {
+        sevenAM.style.background = "darkgray"
         console.log("we are past seven AM")
     }
-    if (eightAM < hour + 1) {
-        eightAM.classList.remove("timeline")
-        sevenAM.classList.add("timelineDone")
+    if (hour >= 9) {
+        eightAM.style.background = "darkgray"
     }
 }
+
+// function timeColors() {
+//     if (sevenAM < hour + 1) {
+//         sevenAM.classList.remove("timeline")
+//         sevenAM.classList.add("timelineDone")
+//         console.log("we are past seven AM")
+//     }
+//     if (eightAM < hour + 1) {
+//         eightAM.classList.remove("timeline")
+//         sevenAM.classList.add("timelineDone")
+//     }
+// }
 timeColors()
 
 
