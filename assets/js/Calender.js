@@ -15,8 +15,7 @@ const deleteEvent = document.getElementById('delete-event')
 addEvent.addEventListener('click', oneMoreEvent)
 
 function oneMoreEvent() {
-    let inputForm = document.createElement('form')
-    inputForm.setAttribute()
+   document.getElementById("myForm").style.display = "block"
 }
 
 // I created seperate IDs for each timeblock so I could more easily alter their colors
