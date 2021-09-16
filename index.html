@@ -12,8 +12,29 @@
     <!-- this will be the current date -->
     <h1 id="currentDate" class="date">Date</h1>
 
-    <button id="add-event" class="BTN">Add Event</button>
-    <button id="delete-event" class="BTN">Delete Event</button>
+    <!-- <button id="add-event" class="BTN">Add Event</button>
+    <button id="delete-event" class="BTN">Delete Event</button> -->
+
+    <!-- <div class="formPopup" id='myForm'> -->
+        <form class="formPopup">
+            <h1>Add Event</h1>
+            
+            <label class="formInfo" for="event">Event you want to add</label>
+            <input class="formInfo" id="inputEvent" type="text" placeholder="enter your event" name="addEvent" required>
+    
+            <label class="formInfo" for="time">set the hour</label>
+            <input class="formInfo" id="inputTime" type="datetime" placeholder="enter the time" name="eventTime" required>
+            
+            <label class="checkBox" for="AM">AM</label>
+            <input type="checkbox" class="checkBox" id="AMcheck" required>
+
+            <label class="checkBox" for="PM">PM</label>
+            <input type="checkbox" class="checkBox" id="PMcheck" required>
+    
+            <button id="submitEvent" type="submit" class="submitEvent">Submit</button>
+            <button type="cancel" class="cancelEvent">Cancel</button>
+        </form>
+        <!-- </div> -->
 
     <!-- this will contain the column of hours -->
     <div class="hours">
@@ -60,5 +81,7 @@
                 <button id="delete-event" class="BTN">Delete Event</button> -->
             </div>
         </div>
+
+        
 </body>
 </html>
