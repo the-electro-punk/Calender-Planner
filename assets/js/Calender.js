@@ -3,20 +3,22 @@ var today = new Date()
 var date = (today.getMonth()+1)+'/'+(today.getDay()+12)+'/'+today.getFullYear()
 console.log(date)
 
+
+// var inputTime = document.getElementsById("inputTime")
+
 var hour = today.getHours()
 // +':'+today.getMinutes()
 console.log("current hours is " + hour)
 
 let currentDate = document.getElementById("currentDate")
+let selectTime = document.getElementById('inputTime')
 
-const addEvent = document.getElementById('add-event')
-const deleteEvent = document.getElementById('delete-event')
+// const addEvent = document.getElementById('add-event')
+// const deleteEvent = document.getElementById('delete-event')
+const submitEvent = document.getElementById('submitEvent')
 
-addEvent.addEventListener('click', oneMoreEvent)
+submitEvent.addEventListener('click', oneMoreEvent)
 
-function oneMoreEvent() {
-   document.getElementById("myForm").style.display = "block"
-}
 
 // I created seperate IDs for each timeblock so I could more easily alter their colors
 const sevenAM = document.getElementById("7AM") 
@@ -58,19 +60,31 @@ function timeColors() {
     }
 }
 
-// function timeColors() {
-//     if (sevenAM < hour + 1) {
-//         sevenAM.classList.remove("timeline")
-//         sevenAM.classList.add("timelineDone")
-//         console.log("we are past seven AM")
-//     }
-//     if (eightAM < hour + 1) {
-//         eightAM.classList.remove("timeline")
-//         sevenAM.classList.add("timelineDone")
-//     }
-// }
 timeColors()
 
+// this functions takes the inputs and appends it to the specific timeblock
+function oneMoreEvent(event) {
+    event.preventDefault()
+    var inputEvent = document.getElementById("inputEvent").value
+    console.log(inputEvent)
+    var inputTime = document.getElementById("inputTime").value
+    console.log(inputTime)
+
+    var selectOption = document.getElementById('classInfo').value
+    console.log(selectOption)
+    if (inputTime = null) {
+        window.alert("you need to input a time")
+    }
+    else if (inputTime >= 7 && inputTime < 8 && selectOption === 'AM') {
+        sevenAM.appendChild()
+        console.log("event is " + inputEvent + "time " + inputTime + "AM")
+    }
+
+}
+// querySelector is more general while getElementById is specific
+// might use querySelector all on a checkbox to select all checkboxes
+
+// always clean/condense the data being uploaded
 
 // https://tecadmin.net/get-current-date-time-javascript/
 // https://careerkarma.com/blog/javascript-cannot-set-property-innerhtml-of-null/

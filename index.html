@@ -16,20 +16,24 @@
     <button id="delete-event" class="BTN">Delete Event</button> -->
 
     <!-- <div class="formPopup" id='myForm'> -->
-        <form class="formPopup">
+        <!-- <form class="formPopup">
             <h1>Add Event</h1>
             
-            <label class="formInfo" for="event">Event you want to add</label>
+            <label class="formTitle" for="event">Event you want to add</label>
             <input class="formInfo" id="inputEvent" type="text" placeholder="enter your event" name="addEvent" required>
     
-            <label class="formInfo" for="time">set the hour</label>
+            <label class="formTitle" for="time">set the hour</label>
             <input class="formInfo" id="inputTime" type="datetime" placeholder="enter the time" name="eventTime" required>
             
-            <label class="checkBox" for="AM">AM</label>
+            <select id="classInfo" class="formInfo">
+                <option value="AM" id="AM">AM</option>
+                <option value="PM" id="PM">PM</option>
+            </select> -->
+            <!-- <label class="checkBox" for="AM">AM</label>
             <input type="checkbox" class="checkBox" id="AMcheck" required>
 
             <label class="checkBox" for="PM">PM</label>
-            <input type="checkbox" class="checkBox" id="PMcheck" required>
+            <input type="checkbox" class="checkBox" id="PMcheck" required> -->
     
             <button id="submitEvent" type="submit" class="submitEvent">Submit</button>
             <button type="cancel" class="cancelEvent">Cancel</button>
@@ -42,43 +46,44 @@
         <div  class="hours-list">
             <p class="specific-hour">7:00AM</p>
             <div id="7AM" class="timeline">
-                <!-- <button id="add-event" class="BTN">Add Event</button>
-                <button id="delete-event" class="BTN">Delete Event</button> -->
+                <!-- these buttons add or delete events for the particular hour -->
+                <button id="add-event" class="BTN">Add Event</button>
+                <button id="delete-event" class="BTN">Delete Event</button>
             </div>
         </div>
         <div class="hours-list">
             <p  class="specific-hour">8:00AM</p>
             <div id="8AM" class="timeline">
-                <!-- <button id="add-event" class="BTN">Add Event</button>
-                <button id="delete-event" class="BTN">Delete Event</button> -->
+                <button id="add-event" class="BTN">Add Event</button>
+                <button id="delete-event" class="BTN">Delete Event</button>
             </div>
         </div>
         <div class="hours-list">
             <p  class="specific-hour">9:00AM</p>
             <div id="9AM" class="timeline">
-                <!-- <button id="add-event" class="BTN">Add Event</button>
-                <button id="delete-event" class="BTN">Delete Event</button> -->
+                <button id="add-event" class="BTN">Add Event</button>
+                <button id="delete-event" class="BTN">Delete Event</button>
             </div>
         </div>
         <div class="hours-list">
             <p  class="specific-hour">10:00AM</p>
             <div id="10AM" class="timeline">
-                <!-- <button id="add-event" class="BTN">Add Event</button>
-                <button id="delete-event" class="BTN">Delete Event</button> -->
+                <button id="add-event" class="BTN">Add Event</button>
+                <button id="delete-event" class="BTN">Delete Event</button>
             </div>
         </div>
         <div class="hours-list">
             <p class="specific-hour">11:00AM</p>
             <div id="11AM" class="timeline">
-                <!-- <button id="add-event" class="BTN">Add Event</button>
-                <button id="delete-event" class="BTN">Delete Event</button> -->
+                <button id="add-event" class="BTN">Add Event</button>
+                <button id="delete-event" class="BTN">Delete Event</button>
             </div>
         </div>
         <div class="hours-list">
             <p class="specific-hour">12:00AM</p>
             <div id="12AM" class="timeline">
-                <!-- <button id="add-event" class="BTN">Add Event</button>
-                <button id="delete-event" class="BTN">Delete Event</button> -->
+                <button id="add-event" class="BTN">Add Event</button>
+                <button id="delete-event" class="BTN">Delete Event</button>
             </div>
         </div>
 
