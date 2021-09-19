@@ -13,7 +13,7 @@ console.log("current hours is " + hour)
 let currentDate = document.getElementById("currentDate")
 let selectTime = document.getElementById('inputTime')
 
-const addEvent = document.getElementById("add-event")
+const addEvent = document.querySelector("add-event")
 const deleteEvent = document.getElementsByName("delete-event")
 
 addEvent.addEventListener('click', formInput)
