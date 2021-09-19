@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inputform</title>
+</head>
+<body>
+      <!-- this is the form where you will submit your task/event -->
+      <div class="formPopup  hide" id='myForm'>
+        <form>
+            <h1>Add Event</h1>
+            
+            <label class="formTitle" for="event">Event you want to add</label>
+            <input class="formInfo" id="inputEvent" type="text" placeholder="enter your event" name="addEvent" required>
+    
+            <!-- <label class="formTitle" for="time">set the hour</label>
+            <input class="formInfo" id="inputTime" type="datetime" placeholder="enter the time" name="eventTime" required> -->
+            
+            <!-- <select id="classInfo" class="formInfo">
+                <option value="AM" id="AM">AM</option>
+                <option value="PM" id="PM">PM</option>
+            </select> -->
+            <!-- <label class="checkBox" for="AM">AM</label>
+            <input type="checkbox" class="checkBox" id="AMcheck" required>
+
+            <label class="checkBox" for="PM">PM</label>
+            <input type="checkbox" class="checkBox" id="PMcheck" required> -->
+    
+            <button id="submitEvent" type="submit" class="formButton">Submit</button>
+            <button type="cancel" class="formButton">Cancel</button>
+        </form>
+    </div>
+</body>
+</html>
