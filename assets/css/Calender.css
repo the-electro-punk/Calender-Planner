@@ -12,8 +12,9 @@ h1 {
 .formPopup {
     display: flex;
     flex-direction: column;
-    width: 350px;
+    width: 400px;
     height: auto;
+    text-align: center;
     margin-left: auto;
     margin-right: auto;
     background-color: cadetblue;
@@ -28,8 +29,13 @@ h1 {
     font-weight: bold;
 }
 .formInfo {
-    margin: 3px;
-    height:25px;
+    height: 80px;
+    line-height: 50px;
+}
+.formButton {
+    height: 50px;
+    font-size: 24px;
+    margin: 5px;
 }
 .hours {
     display: inline;
@@ -56,7 +62,7 @@ h1 {
     width: 1200px;
     display:flex;
     flex-direction: column;
-    margin: 0 auto 0 auto;
+    margin-left: 10px;
 }
 /* .timelineDone{
     background-color: red;
@@ -69,15 +75,18 @@ h1 {
     margin: 0 auto 0 auto; */
 /* } */
 .BTN {
-    width: 360px;
+    width: 100px;
     height:50px;
-    /* margin-top: 20px; */
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 24px;
+    margin-top: 20px;
+    margin-left: 10px;
+    font-size: 18px;
     font-weight:bold;
-    background-color: darkgreen;
+    background-color: darkgray;
 }
 .BTN:hover {
-background-color: limegreen;
+background-color: lightgray;
+}
+.hide {
+    display: none;
+    background-color: none;
 }

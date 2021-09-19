@@ -13,11 +13,15 @@ console.log("current hours is " + hour)
 let currentDate = document.getElementById("currentDate")
 let selectTime = document.getElementById('inputTime')
 
+const addEvent = document.getElementById("add-event")
+const deleteEvent = document.getElementsByName("delete-event")
+
+addEvent.addEventListener('click', formInput)
 // const addEvent = document.getElementById('add-event')
 // const deleteEvent = document.getElementById('delete-event')
 const submitEvent = document.getElementById('submitEvent')
 
-submitEvent.addEventListener('click', oneMoreEvent)
+// submitEvent.addEventListener('click', oneMoreEvent)
 
 
 // I created seperate IDs for each timeblock so I could more easily alter their colors
@@ -62,6 +66,9 @@ function timeColors() {
 
 timeColors()
 
+function formInput() {
+    window.location = "C:\Users\Ben\Desktop\_Coding BootCamp\_weeks lessons\week 5\Calender-Planner\inputForm.html"
+}
 // this functions takes the inputs and appends it to the specific timeblock
 function oneMoreEvent(event) {
     event.preventDefault()
