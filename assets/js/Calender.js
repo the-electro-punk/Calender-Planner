@@ -13,6 +13,8 @@ console.log("current hours is " + hour)
 let currentDate = document.getElementById("currentDate")
 let selectTime = document.getElementById('inputTime')
 
+var calenderStorage = window.localStorage
+
 const addEvent = document.querySelector("add-event")
 const deleteEvent = document.getElementsByName("delete-event")
 
@@ -82,10 +84,21 @@ function oneMoreEvent(event) {
     if (inputTime = null) {
         window.alert("you need to input a time")
     }
+    var new_calender_data = document.getElementsByName("inputEvent").value
+    if(localStorage.getItem('data')===null){
+        localStorage.setItem('data', '[]')
+    }
+    var old_calender_data = JSON.parse(localStorage.getItem('data'))
+    old_calender_data.push(new_calender_data)
+
+    localStorage.setItem('data', JSON.stringify(old_calender_data)
+
+    // this determines the timeframe
     else if (inputTime >= 7 && inputTime < 8 && selectOption === 'AM') {
         sevenAM.appendChild()
         console.log("event is " + inputEvent + "time " + inputTime + "AM")
     }
+
 
 }
 // querySelector is more general while getElementById is specific
@@ -95,3 +108,4 @@ function oneMoreEvent(event) {
 
 // https://tecadmin.net/get-current-date-time-javascript/
 // https://careerkarma.com/blog/javascript-cannot-set-property-innerhtml-of-null/
+// localStorage.getItem('data')
