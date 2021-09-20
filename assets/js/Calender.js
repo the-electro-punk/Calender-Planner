@@ -84,6 +84,12 @@ function oneMoreEvent(event) {
     if (inputTime = null) {
         window.alert("you need to input a time")
     }
+    // this determines the timeframe
+    else if (inputTime >= 7 && inputTime < 8 && selectOption === 'AM') {
+        sevenAM.appendChild()
+        console.log("event is " + inputEvent + "time " + inputTime + "AM")
+    }
+    // this logs the data for local storage
     var new_calender_data = document.getElementsByName("inputEvent").value
     if(localStorage.getItem('data')===null){
         localStorage.setItem('data', '[]')
@@ -91,15 +97,7 @@ function oneMoreEvent(event) {
     var old_calender_data = JSON.parse(localStorage.getItem('data'))
     old_calender_data.push(new_calender_data)
 
-    localStorage.setItem('data', JSON.stringify(old_calender_data)
-
-    // this determines the timeframe
-    else if (inputTime >= 7 && inputTime < 8 && selectOption === 'AM') {
-        sevenAM.appendChild()
-        console.log("event is " + inputEvent + "time " + inputTime + "AM")
-    }
-
-
+    localStorage.setItem('data', JSON.stringify(old_calender_data))
 }
 // querySelector is more general while getElementById is specific
 // might use querySelector all on a checkbox to select all checkboxes
