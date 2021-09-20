@@ -15,7 +15,7 @@ let selectTime = document.getElementById('inputTime')
 
 var calenderStorage = window.localStorage
 
-const addEvent = document.querySelector("add-event")
+const addEvent = document.getElementById("add-event")
 const deleteEvent = document.getElementsByName("delete-event")
 
 addEvent.addEventListener('click', formInput)
@@ -45,7 +45,7 @@ function getCurrentDate() {
 getCurrentDate()
 
 // this function allows each timeblock to be colored red once that hour has passed
-// example: fomr 7:00-8:00, the 7:00 timeblock is blue but once 8:00 hits, it turns red
+// example: from 7:00-8:00, the 7:00 timeblock is blue but once 8:00 hits, it turns gray
 function timeColors() {
     console.log("timeColors is active")
     if (hour >= 8) {
